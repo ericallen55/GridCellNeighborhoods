@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "6900f90d-7235-4ef3-aeb0-f2c6f888efa8",
+		"name": "GridCell",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1501636"
+	},
+	"item": [
+		{
+			"name": "GridCell",
+			"item": [
+				{
+					"name": "getNeighborsByDistance",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "createGrid11x11x1middle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"height\": \"11\",\r\n\t\t\"width\": \"11\",\r\n        \"values\": [\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,1,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0]\r\n        ]\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/createGrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"createGrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createGrid11x11x1Corner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"height\": \"11\",\r\n\t\t\"width\": \"11\",\r\n        \"values\": [\r\n        [1,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0]\r\n        ]\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/createGrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"createGrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createGrid11x11x1side",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"height\": \"11\",\r\n\t\t\"width\": \"11\",\r\n        \"values\": [\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,1,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0],\r\n        [0,0,0,0,0,0,0,0,0,0,0]\r\n        ]\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/createGrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"createGrid"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
